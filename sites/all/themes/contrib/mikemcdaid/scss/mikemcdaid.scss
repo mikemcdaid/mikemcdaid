@@ -1,0 +1,481 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file, "app.scss". If you run a compass update this file can
+ * be wiped out with a compass update. By default, when a compass project is
+ * created the file will be named app.scss. Thus this file is named,
+ * THEMENAME.scss.
+ *
+ * This application file (THEMENAME.scss) is where all the partials are
+ * imported.
+ *
+ * Theme styles are categorized using SMACSS standards. They utilize
+ * categorization of styles into various categories. Those categories are the
+ * following:
+ *
+ * - Base: CSS reset/normalize plus HTML element styling.
+ * - Layout: Macro arrangement of a web page, including any grid systems.
+ * - Component: Dictate minor layout modules or reusable elements.
+ * - State: Describe the appearance of a module in various states.
+ * - Theme: Purely visual optional styling ("look-and-feel") for a component.
+ *
+ * For more information about this new Drupal css file standard, please review
+ * the following:
+ * - https://drupal.org/node/1887922
+ * - http://smacss.com/
+ */
+
+// Base
+//
+// Init file contains required imports. Here's where we include normalize,
+// foundation and also compass.
+@import "base/init";
+// Import our mixins early so they can be used by other partials.
+@import "base/mixins";
+//
+// Common file is where you place common utility classes to extend or
+// parametrics. Optional file.
+@import "base/common";
+//
+// Fix for some Drupal CSS quirks (Drupalisms).
+@import "base/drupal";
+//
+// Styling for elements.
+@import "base/elements";
+//
+
+// Layout
+//
+// Each section of the document has it's own partial seperated out to improve
+// developer experience. Additionally, grids can be declared in layouts as well.
+@import "layout/header";
+// @import "layout/main";
+// @import "layout/aside";
+// @import "layout/triptych";
+// @import "layout/footer";
+
+// Components
+// @import "components/buttons";
+// @import "components/type";
+// @import "components/forms";
+@import "components/foundation-icons";
+
+// Themes
+// @import "theme/button-light";
+
+// IE8 Grid Support
+//@import "ie";
+
+/*********************************/
+/*         Shared Styles         */
+/*********************************/
+
+.container{
+  margin-bottom: 50px;
+  padding: 0 20px;
+  color: white;
+  background: #333;
+}
+
+main.row.l-main{
+  margin-bottom: 50px;
+  min-height: 500px;
+}
+
+.main {
+  h1, h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px;
+    font-size: 2em;
+    font-style: italic;
+    color: #ffff00;
+    }
+    h3, h4{
+      margin-left: 20px;
+      color: #ffff00;
+      }
+    h3{font-size: 1.5em;}
+    h4{font-size: 1.2em;}
+    p{padding: 0 20px;}
+    ol, ul{margin-left: 50px;}
+    .field-name-field-site-link{
+      display: inline-block;
+      margin: 50px 0 0 20px;
+      min-width: 200px;
+      }
+}
+
+aside {
+  padding-top: 24px;
+  font-size: .8em;
+  h2{padding-bottom: 10px;
+    border-bottom: solid 2px;
+    font-size: 1.3em;
+    font-style: italic;
+    color: #ffff00;
+  }
+}
+
+a{
+  color: #ffff00;
+  &:hover{
+    color: #918e32;
+  }
+}
+
+//Topbar hover and active underline
+.top-bar .name h1 a:hover,
+.top-bar .name h1 a.active,
+.top-bar-section li a:not(.button):hover,
+.top-bar-section ul li.active > a {border-bottom: 2px solid #ffff00;}
+
+.button{
+  margin: 20px 0 60px 20px;
+  background: #000;
+  border: solid 2px #ffff00;
+  &:hover{
+    background: #333;
+  }
+}
+
+.breadcrumbs{
+  background: #333;
+  border: none;
+}
+.breadcrumbs > * a, {
+  color: #ffff00;
+}
+.breadcrumbs > *.current a {
+  color: white;
+}
+
+/* Form */
+.webform-client-form {
+  clear: both;
+  margin-top: 100px;
+  padding: 10px 20px;
+  background: #000;
+  label{
+    margin-left: 20px;
+    color: white;
+    }
+  .form-item{
+    display: inline-block;
+    }
+  .form-textarea-wrapper {
+    width: 90%;
+    margin: 10px 20px;
+    textarea{
+    height: 200px;
+    }
+  }
+  input{
+    width: 90%;
+    margin: 10px 20px 0 20px;
+    }
+  .webform-submit{
+    margin: 0 20px 20px 20px;
+    background: #000;
+    color: #ffff00;
+    border: solid 2px #ffff00;
+    border-radius: 0;
+    &:hover{
+      color: #ffff00;
+      background: #333;
+      }
+    }
+   @media only screen and (min-width: 551px) {
+    padding: 10px 130px;
+    input, .form-textarea-wrapper{
+      width: 95%;
+    }
+  }
+  @media only screen and (min-width: 901px) {
+      padding: 10px 180px;
+    }
+  @media only screen and (min-width: 1101px) {
+      padding: 10px 90px;
+      input{
+        width: 250px;
+      }
+      .form-textarea-wrapper {
+        width:840px;
+        }
+    }
+  @media only screen and (min-width: 1201px) {
+      padding: 10px 140px;
+      input{
+        width: 250px;
+      }
+      .form-textarea-wrapper {
+        width:840px;
+      }
+  }
+}
+
+
+/*********************************/
+/********  Home Page *************/
+/*********************************/
+
+.front {
+
+  .container{
+    background: -moz-linear-gradient(top,  rgba(51,51,51,0.5) 0%, rgba(51,51,51,1) 5%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,0.5)), color-stop(5%,rgba(51,51,51,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(51,51,51,0.5) 0%,rgba(51,51,51,1) 5%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(51,51,51,0.5) 0%,rgba(51,51,51,1) 5%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(51,51,51,0.5) 0%,rgba(51,51,51,1) 5%,rgba(51,51,51,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(51,51,51,0.5) 0%,rgba(51,51,51,1) 5%,rgba(51,51,51,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+    }
+
+  video{
+    position: absolute;
+    left: 0px;
+    top:  30px;
+    transition:all .2s ease-out;
+    width:100%;
+    z-index:-100;
+
+    @media #{$small} {
+      position: absolute;
+      left: 0px;
+      top: -50px;
+    }
+  }
+
+  .l-featured{
+    min-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+      h1, h2{
+      font-size: 1em;
+      color: #ffff00;
+      }
+
+    @media only screen and (min-width: 301px) {
+    margin-bottom: 50px;
+    }
+
+    @media only screen and (min-width: 401px) {
+    margin-top: 50px;
+    margin-bottom: 65px;
+    padding-left: 50px;
+      h1, h2{
+      font-size: 1.2em;
+      }
+    }
+
+    @media only screen and (min-width: 551px) {
+    margin-bottom: 150px;
+    }
+
+    @media only screen and (min-width: 651px) {
+    margin-bottom: 155px;
+      h1, h2{
+      font-size: 1.5em;
+      }
+    }
+
+    @media only screen and (min-width:900px) {
+    margin-top: 75px;
+      h1, h2{
+      font-size: 1.8em;
+      }
+    }
+
+    @media only screen and (min-width:1150px) {
+    margin-top: 150px;
+    margin-bottom: 245px;
+      h1, h2{
+      font-size: 2em;
+      }
+    }
+
+    @media only screen and (min-width:1300px) {
+    margin-bottom: 295px;
+    }
+  }
+
+  .l-triptych{
+    &:hover{
+    }
+    section{
+      padding: 10px 20px;
+      }
+    h2{
+      padding-bottom: 10px;
+      border-bottom: solid 2px;
+      font-size: 1.7em;
+      text-align: center;
+      }
+      .triptych-first h2{color: red;}
+      .triptych-middle h2{color: green;}
+      .triptych-last h2{color: blue;}
+      p{
+      padding-top: 20px;
+      }
+      ul{
+      list-style: none;
+      }
+      li::before
+      {
+      margin-right: 10px;
+      font-family: foundation-icons;
+      content: "\f127";
+      font-size: 1.5em;
+      }
+      .i{
+        color: white;
+      }
+      @media only screen and (min-width: 551px) and (max-width: 767px) {
+        p, ul{
+          padding-left: 70px;
+        }
+      }
+      @media #{$small} {
+      section{
+        height: 400px;
+        }
+      }
+  }
+
+}
+
+/*********************************/
+/*****   Experience Page   *******/
+/*********************************/
+
+.field-name-field-cv{
+  margin: 50px 0 0 20px;
+}
+
+/*********************************/
+/****   Qualifications Page  *****/
+/*********************************/
+
+.section-qualifications{
+
+}
+
+
+/*********************************/
+/****   Main Portfolio Page  *****/
+/*********************************/
+
+.section-portfolio{
+  h1{
+    margin-left: 0;
+    @media only screen and (min-width: 551px) {
+      margin-left: 20px;
+    }
+  }
+  .view-portfolio-teasers{
+    h3, p{
+      margin-left: 0;
+      padding: 0;
+    }
+    h3{
+      font-size: 1.2em;}
+    img{margin-bottom: 50px;}
+    .portfolios{
+      margin-left: 0;
+      list-style: none;
+      @media only screen and (min-width: 551px) {
+        @include block-grid(2);
+        margin-left:20px;
+      }
+    }
+  }
+}
+
+
+
+
+/*********************************/
+/*   Individual Portfolio Pages  */
+/*********************************/
+
+.node-type-portfolio-posts{
+  img{
+    float: right;
+    margin: 20px;
+    max-width: 90%;
+    @media only screen and (min-width: 551px) {
+    width: 40%;
+    }
+  }
+}
+
+
+/*********************************/
+/*****   Contact Page   **********/
+/*********************************/
+
+.section-contact{
+  ul.contact-social-icons{
+    width: 25%;
+    min-width: 170px;
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    list-style: none;
+    li {
+    a{
+      font-size: 1.5em;
+      color: #666;
+      line-height: 48px;
+      i{
+        margin-top: 3px;
+        margin-right: 10px;
+        font-size: 1.5em;
+        color: #ffff00;
+        &:hover{
+          color: #918e32;
+        }
+        }
+        &:hover{
+          color: #918e32;
+      }
+    }
+   }
+  }
+}
+
+
+/*********************************/
+/********   Footer   *************/
+/*********************************/
+
+.footer_bg{
+  width: 100%;
+  background: #333;
+  color: #666;
+  .l-footer{
+    background: #333;
+    color: #666;
+    text-align: center;
+  }
+  .footer-first {
+    padding-top: 20px;
+  }
+  ul{
+    list-style: none;
+    display: inline;
+    a{padding: 0;}
+    i{
+      float: right;
+      margin-left:10px;
+      font-size: 2em;
+      }
+    }
+    .panel{
+      padding-top: 150px;
+      border: none;
+      }
+  }
