@@ -103,14 +103,20 @@
      <?php endif; ?>
 
      <?php if ($is_front): ?>
-         <video preload autoplay loop muted poster="/sites/mikemcdaid-local.dd/files/images/digital-image.png">
-          <source src="/sites/mikemcdaid-local.dd/files/video/digital.mp4" type="video/mp4">
-          <source src="/sites/mikemcdaid-local.dd/files/video/digital.ogg" type="video/ogg">
-         </video>
+      <div class="banner">
+        <div class="video-bg">
+          <video preload autoplay loop muted poster="/sites/mikemcdaid-local.dd/files/images/digital-image.png">
+           <source src="/sites/mikemcdaid-local.dd/files/video/digital.mp4" type="video/mp4">
+           <source src="/sites/mikemcdaid-local.dd/files/video/digital.ogg" type="video/ogg">
+          </video>
+        </div>
+        <div class="poster-bg">
+          <img src="/sites/mikemcdaid-local.dd/files/images/digital-image.png" />
+        </div>
+      </div>
      <?php endif; ?>
 
      <div class="row container">
-
       <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
         <!--.triptych-->
         <section class="l-triptych row">

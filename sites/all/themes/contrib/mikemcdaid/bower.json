@@ -1,0 +1,6 @@
+{
+  "name": "mikemcdaid",
+  "dependencies": {
+    "foundation": "~5.1.0"
+  }
+}

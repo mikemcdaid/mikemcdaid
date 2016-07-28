@@ -87,11 +87,17 @@ main.row.l-main{
   h1, h2{
     margin-left: 20px;
     margin-right: 20px;
+    padding-left: 0;
     padding-bottom: 10px;
     border-bottom: solid 2px;
     font-size: 2em;
     font-style: italic;
     color: #ffff00;
+    text-align: center;
+      @media only screen and (min-width: 801px) {
+        text-align: left;
+        padding-left: 60px;
+        }
     }
     h3, h4{
       margin-left: 20px;
@@ -233,20 +239,28 @@ a{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
     }
 
-  video{
-    position: absolute;
-    left: 0px;
-    top:  30px;
-    transition:all .2s ease-out;
-    width:100%;
-    z-index:-100;
-
-    @media #{$small} {
+  .banner {
+      display: inline-block;
       position: absolute;
       left: 0px;
       top: -50px;
+      width:100%;
+      z-index:-100;
+      .video-bg {
+        display: none;
+        @media #{$small} {
+        display: inline-block;
+      }
+    video{ transition:all .2s ease-out; }
+    }
+    .poster-bg {
+      display: inline-block;
+      @media #{$small} {
+      display: none;
+      }
     }
   }
+
 
   .l-featured{
     min-width: 300px;
@@ -255,6 +269,9 @@ a{
       h1, h2{
       font-size: 1em;
       color: #ffff00;
+      //color: blue;
+      text-align: center;
+      margin: 0 5px;
       }
 
     @media only screen and (min-width: 301px) {
@@ -267,6 +284,7 @@ a{
     padding-left: 50px;
       h1, h2{
       font-size: 1.2em;
+      text-align: left;
       }
     }
 
@@ -455,14 +473,20 @@ a{
 .footer_bg{
   width: 100%;
   background: #333;
-  color: #666;
+  color: #666!important;
+
   .l-footer{
     background: #333;
-    color: #666;
     text-align: center;
+
   }
   .footer-first {
     padding-top: 20px;
+    //text-align: center;
+    text-align: left;
+    // @media #{$small} {
+    //   text-align: left;
+    // }
   }
   ul{
     list-style: none;
@@ -475,7 +499,7 @@ a{
       }
     }
     .panel{
-      padding-top: 150px;
+      padding-top: 0;
       border: none;
       }
   }
