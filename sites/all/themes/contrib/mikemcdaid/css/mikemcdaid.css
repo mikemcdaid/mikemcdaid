@@ -9321,28 +9321,29 @@ a:hover {
   .front .banner .video-bg {
     display: inline-block;
   }
+  /* line 253, ../scss/mikemcdaid.scss */
+  .front .banner .video-bg video {
+    width: 100%;
+    transition: all .2s ease-out;
+  }
 }
-/* line 254, ../scss/mikemcdaid.scss */
-.front .banner .video-bg video {
-  transition: all .2s ease-out;
-}
-/* line 256, ../scss/mikemcdaid.scss */
+/* line 259, ../scss/mikemcdaid.scss */
 .front .banner .poster-bg {
   display: inline-block;
 }
 @media only screen and (min-width: 768px) {
-  /* line 256, ../scss/mikemcdaid.scss */
+  /* line 259, ../scss/mikemcdaid.scss */
   .front .banner .poster-bg {
     display: none;
   }
 }
-/* line 265, ../scss/mikemcdaid.scss */
+/* line 268, ../scss/mikemcdaid.scss */
 .front .l-featured {
   min-width: 300px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 269, ../scss/mikemcdaid.scss */
+/* line 272, ../scss/mikemcdaid.scss */
 .front .l-featured h1, .front .l-featured h2 {
   font-size: 1em;
   color: #ffff00;
@@ -9350,117 +9351,117 @@ a:hover {
   margin: 0 5px;
 }
 @media only screen and (min-width: 301px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 401px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-top: 50px;
     margin-bottom: 65px;
     padding-left: 50px;
   }
-  /* line 285, ../scss/mikemcdaid.scss */
+  /* line 288, ../scss/mikemcdaid.scss */
   .front .l-featured h1, .front .l-featured h2 {
     font-size: 1.2em;
     text-align: left;
   }
 }
 @media only screen and (min-width: 551px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-bottom: 150px;
   }
 }
 @media only screen and (min-width: 651px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-bottom: 155px;
   }
-  /* line 297, ../scss/mikemcdaid.scss */
+  /* line 300, ../scss/mikemcdaid.scss */
   .front .l-featured h1, .front .l-featured h2 {
     font-size: 1.5em;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-top: 75px;
   }
-  /* line 304, ../scss/mikemcdaid.scss */
+  /* line 307, ../scss/mikemcdaid.scss */
   .front .l-featured h1, .front .l-featured h2 {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 1150px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-top: 150px;
     margin-bottom: 245px;
   }
-  /* line 312, ../scss/mikemcdaid.scss */
+  /* line 315, ../scss/mikemcdaid.scss */
   .front .l-featured h1, .front .l-featured h2 {
     font-size: 2em;
   }
 }
 @media only screen and (min-width: 1300px) {
-  /* line 265, ../scss/mikemcdaid.scss */
+  /* line 268, ../scss/mikemcdaid.scss */
   .front .l-featured {
     margin-bottom: 295px;
   }
 }
-/* line 325, ../scss/mikemcdaid.scss */
+/* line 328, ../scss/mikemcdaid.scss */
 .front .l-triptych section {
   padding: 10px 20px;
 }
-/* line 328, ../scss/mikemcdaid.scss */
+/* line 331, ../scss/mikemcdaid.scss */
 .front .l-triptych h2 {
   padding-bottom: 10px;
   border-bottom: solid 2px;
   font-size: 1.7em;
   text-align: center;
 }
-/* line 334, ../scss/mikemcdaid.scss */
+/* line 337, ../scss/mikemcdaid.scss */
 .front .l-triptych .triptych-first h2 {
   color: red;
 }
-/* line 335, ../scss/mikemcdaid.scss */
+/* line 338, ../scss/mikemcdaid.scss */
 .front .l-triptych .triptych-middle h2 {
   color: green;
 }
-/* line 336, ../scss/mikemcdaid.scss */
+/* line 339, ../scss/mikemcdaid.scss */
 .front .l-triptych .triptych-last h2 {
   color: blue;
 }
-/* line 337, ../scss/mikemcdaid.scss */
+/* line 340, ../scss/mikemcdaid.scss */
 .front .l-triptych p {
   padding-top: 20px;
 }
-/* line 340, ../scss/mikemcdaid.scss */
+/* line 343, ../scss/mikemcdaid.scss */
 .front .l-triptych ul {
   list-style: none;
 }
-/* line 343, ../scss/mikemcdaid.scss */
+/* line 346, ../scss/mikemcdaid.scss */
 .front .l-triptych li::before {
   margin-right: 10px;
   font-family: foundation-icons;
   content: "\f127";
   font-size: 1.5em;
 }
-/* line 350, ../scss/mikemcdaid.scss */
+/* line 353, ../scss/mikemcdaid.scss */
 .front .l-triptych .i {
   color: white;
 }
 @media only screen and (min-width: 551px) and (max-width: 767px) {
-  /* line 354, ../scss/mikemcdaid.scss */
+  /* line 357, ../scss/mikemcdaid.scss */
   .front .l-triptych p, .front .l-triptych ul {
     padding-left: 70px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 359, ../scss/mikemcdaid.scss */
+  /* line 362, ../scss/mikemcdaid.scss */
   .front .l-triptych section {
     height: 400px;
   }
@@ -9469,7 +9470,7 @@ a:hover {
 /*********************************/
 /*****   Experience Page   *******/
 /*********************************/
-/* line 371, ../scss/mikemcdaid.scss */
+/* line 374, ../scss/mikemcdaid.scss */
 .field-name-field-cv {
   margin: 50px 0 0 20px;
 }
@@ -9480,36 +9481,36 @@ a:hover {
 /*********************************/
 /****   Main Portfolio Page  *****/
 /*********************************/
-/* line 389, ../scss/mikemcdaid.scss */
+/* line 392, ../scss/mikemcdaid.scss */
 .section-portfolio h1 {
   margin-left: 0;
 }
 @media only screen and (min-width: 551px) {
-  /* line 389, ../scss/mikemcdaid.scss */
+  /* line 392, ../scss/mikemcdaid.scss */
   .section-portfolio h1 {
     margin-left: 20px;
   }
 }
-/* line 396, ../scss/mikemcdaid.scss */
+/* line 399, ../scss/mikemcdaid.scss */
 .section-portfolio .view-portfolio-teasers h3, .section-portfolio .view-portfolio-teasers p {
   margin-left: 0;
   padding: 0;
 }
-/* line 400, ../scss/mikemcdaid.scss */
+/* line 403, ../scss/mikemcdaid.scss */
 .section-portfolio .view-portfolio-teasers h3 {
   font-size: 1.2em;
 }
-/* line 402, ../scss/mikemcdaid.scss */
+/* line 405, ../scss/mikemcdaid.scss */
 .section-portfolio .view-portfolio-teasers img {
   margin-bottom: 50px;
 }
-/* line 403, ../scss/mikemcdaid.scss */
+/* line 406, ../scss/mikemcdaid.scss */
 .section-portfolio .view-portfolio-teasers .portfolios {
   margin-left: 0;
   list-style: none;
 }
 @media only screen and (min-width: 551px) {
-  /* line 403, ../scss/mikemcdaid.scss */
+  /* line 406, ../scss/mikemcdaid.scss */
   .section-portfolio .view-portfolio-teasers .portfolios {
     display: block;
     padding: 0;
@@ -9551,14 +9552,14 @@ a:hover {
 /*********************************/
 /*   Individual Portfolio Pages  */
 /*********************************/
-/* line 422, ../scss/mikemcdaid.scss */
+/* line 425, ../scss/mikemcdaid.scss */
 .node-type-portfolio-posts img {
   float: right;
   margin: 20px;
   max-width: 90%;
 }
 @media only screen and (min-width: 551px) {
-  /* line 422, ../scss/mikemcdaid.scss */
+  /* line 425, ../scss/mikemcdaid.scss */
   .node-type-portfolio-posts img {
     width: 40%;
   }
@@ -9567,7 +9568,7 @@ a:hover {
 /*********************************/
 /*****   Contact Page   **********/
 /*********************************/
-/* line 438, ../scss/mikemcdaid.scss */
+/* line 441, ../scss/mikemcdaid.scss */
 .section-contact ul.contact-social-icons {
   width: 25%;
   min-width: 170px;
@@ -9577,24 +9578,24 @@ a:hover {
   margin-bottom: 50px;
   list-style: none;
 }
-/* line 447, ../scss/mikemcdaid.scss */
+/* line 450, ../scss/mikemcdaid.scss */
 .section-contact ul.contact-social-icons li a {
   font-size: 1.5em;
   color: #666;
   line-height: 48px;
 }
-/* line 451, ../scss/mikemcdaid.scss */
+/* line 454, ../scss/mikemcdaid.scss */
 .section-contact ul.contact-social-icons li a i {
   margin-top: 3px;
   margin-right: 10px;
   font-size: 1.5em;
   color: #ffff00;
 }
-/* line 456, ../scss/mikemcdaid.scss */
+/* line 459, ../scss/mikemcdaid.scss */
 .section-contact ul.contact-social-icons li a i:hover {
   color: #918e32;
 }
-/* line 460, ../scss/mikemcdaid.scss */
+/* line 463, ../scss/mikemcdaid.scss */
 .section-contact ul.contact-social-icons li a:hover {
   color: #918e32;
 }
@@ -9602,38 +9603,38 @@ a:hover {
 /*********************************/
 /********   Footer   *************/
 /*********************************/
-/* line 473, ../scss/mikemcdaid.scss */
+/* line 476, ../scss/mikemcdaid.scss */
 .footer_bg {
   width: 100%;
   background: #333;
   color: #666 !important;
 }
-/* line 478, ../scss/mikemcdaid.scss */
+/* line 481, ../scss/mikemcdaid.scss */
 .footer_bg .l-footer {
   background: #333;
   text-align: center;
 }
-/* line 483, ../scss/mikemcdaid.scss */
+/* line 486, ../scss/mikemcdaid.scss */
 .footer_bg .footer-first {
   padding-top: 20px;
   text-align: left;
 }
-/* line 491, ../scss/mikemcdaid.scss */
+/* line 494, ../scss/mikemcdaid.scss */
 .footer_bg ul {
   list-style: none;
   display: inline;
 }
-/* line 494, ../scss/mikemcdaid.scss */
+/* line 497, ../scss/mikemcdaid.scss */
 .footer_bg ul a {
   padding: 0;
 }
-/* line 495, ../scss/mikemcdaid.scss */
+/* line 498, ../scss/mikemcdaid.scss */
 .footer_bg ul i {
   float: right;
   margin-left: 10px;
   font-size: 2em;
 }
-/* line 501, ../scss/mikemcdaid.scss */
+/* line 504, ../scss/mikemcdaid.scss */
 .footer_bg .panel {
   padding-top: 0;
   border: none;

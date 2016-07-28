@@ -250,8 +250,11 @@ a{
         display: none;
         @media #{$small} {
         display: inline-block;
+          video{
+            width: 100%;
+            transition:all .2s ease-out;
+          }
       }
-    video{ transition:all .2s ease-out; }
     }
     .poster-bg {
       display: inline-block;
